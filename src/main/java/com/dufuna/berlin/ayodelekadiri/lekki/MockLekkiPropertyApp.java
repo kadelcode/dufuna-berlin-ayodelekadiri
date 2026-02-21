@@ -14,6 +14,8 @@ public class MockLekkiPropertyApp {
         LekkiPropertyService service = new MockLekkiPropertyService();
 
         service.saveProperty(property);
-        service.getProperty();
+        LekkiProperty retrievedProperty = service.getProperty();
+
+        System.out.println(retrievedProperty);
     }
 }

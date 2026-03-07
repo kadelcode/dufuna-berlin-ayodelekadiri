@@ -2,8 +2,13 @@ package com.dufuna.berlin.ayodelekadiri.lekki.service;
 
 import com.dufuna.berlin.ayodelekadiri.lekki.model.LekkiProperty;
 
-public interface LekkiPropertyService {
-  void saveProperty(LekkiProperty property);
+import java.util.List;
 
-  LekkiProperty getProperty();
+public interface LekkiPropertyService {
+
+  LekkiProperty saveProperty(LekkiProperty property);
+
+  LekkiProperty getProperty(Long id);
+
+  List<LekkiProperty> getProperties();
 }
